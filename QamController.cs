@@ -6,20 +6,20 @@ namespace ERP_Login
 {
     internal class QamController
     {
-        private Form _mainForm; // Reference to the MainForm
-        private Button projectsButton; // Button for Projects
+        private Form _mainForm; 
+        private Button projectsButton; 
 
         public QamController(Form mainForm)
         {
             _mainForm = mainForm;
-            InitializeProjectsButton(); // Initialize the Projects button
+            InitializeProjectsButton();
         }
 
         private void InitializeProjectsButton()
         {
             projectsButton = new Button();
             projectsButton.Text = "Drawings";
-            projectsButton.Location = new System.Drawing.Point(30, 120); // Adjust location as needed
+            projectsButton.Location = new System.Drawing.Point(30, 120); 
             projectsButton.Size = new System.Drawing.Size(100, 30);
             projectsButton.ForeColor = Color.Black;
             projectsButton.BackColor = Color.White;
@@ -29,15 +29,13 @@ namespace ERP_Login
 
         private void ProjectsButton_Click(object sender, EventArgs e)
         {
-            // Handle the click event for Projects button here
-            // Example: Opening a ProjectsForm
             ProjectsForm projectsForm = new ProjectsForm();
             projectsForm.Show();
         }
 
         public void ShowControls()
         {
-            projectsButton.Visible = true; // Show the Projects button
+            projectsButton.Visible = true; 
         }
     }
 }
