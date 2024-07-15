@@ -40,7 +40,7 @@ namespace ERP_Login
 
         private void Main_Load(object sender, EventArgs e)
         {
-            // Initialization code, if any
+
         }
     }
 }
